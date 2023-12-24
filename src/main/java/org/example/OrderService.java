@@ -1,3 +1,4 @@
+package org.example;
 
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,6 @@ public class OrderService {
 
     public Order getOrder(Long id) {
         return orderRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Order not found"));
+                .orElseThrow(() -> new IllegalArgumentException("org.example.Order not found"));
     }
 }
